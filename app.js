@@ -998,3 +998,500 @@ console.log(hello);*/
 // document.write(percentage.toFixed(2));
 
 // |.......................COMPLETE CHAPTER 20 TO 30.........................|
+
+
+/* .................CHAPTER 31 to 34......................*/
+/*DATE METHODS #1 */
+// var my_date=new Date();
+// alert(my_date)
+
+/*DATE METHODS #2 */
+// var my_month=new Date();
+// var month_name=new Array(12);
+// month_name[0]="January"
+// month_name[1]="February"
+// month_name[2]="March"
+// month_name[3]="April"
+// month_name[4]="May"
+// month_name[5]="June"
+// month_name[6]="July"
+// month_name[7]="August"
+// month_name[8]="September"
+// month_name[9]="October"
+// month_name[10]="November"
+// month_name[11]="December"
+// alert ("Current month = " + month_name[my_month.getMonth()]); 
+
+/*DATE METHODS #3 */
+// var my_date=new Date();
+// var day_name=new Array(7);
+// day_name[0]="Sun";
+// day_name[1]="Mon";
+// day_name[2]="Tue";
+// day_name[3]="Wed";
+// day_name[4]="Thu";
+// day_name[5]="Fri";
+// day_name[6]="Sat";
+// alert ("Today is Sat "+day_name[my_date.getDay()]);
+
+/*DATE METHODS #4 */
+// var my_date=new Date();
+// let satOrSun=my_date.getDay();
+// if(satOrSun==0|| satOrSun==6){
+//     alert('Its Fun Day')
+// }
+// else{
+//     alert('its Working Day')
+// }
+
+/*DATE METHODS #5 */
+// var my_date=new Date();
+// let days=my_date.getDate();
+// if(days<=16){
+//     alert('First fifteen days of the month');
+// }
+// else{
+//     alert('Last days of the month');
+// }
+
+/*DATE METHODS #6 */
+// var today=new Date();
+// var todayTime=today.getTime();
+// document.write("Current Date: "+today+"<br />");
+// var current=new Date();
+// current.setDate(1);
+// current.setMonth(0);
+// current.setFullYear(1970);
+// let currentTime=current.getTime()
+// let final= todayTime - currentTime;
+// document.write("Elapsed Milliseconds Since Jnuary 1 , 1970 : " + currentTime+"<br />");
+// document.write("Elapsed Minutes Since Jnuary 1 , 1970 : " + final +"<br />");
+
+/*DATE METHODS #7 */
+// let date=new Date();
+// let time=date.getHours()+":"+date.getMinutes();
+// if(time < 12){
+//     alert('Its AM');
+// }
+// else{
+//     alert('its PM');
+// }
+
+/*DATE METHODS #8 */
+// var laterDate=new Date();
+// laterDate.setDate(31);
+// laterDate.setMonth(11);
+// laterDate.setFullYear(2020);
+// laterDate.setHours(0);
+// laterDate.setMinutes(0);
+// laterDate.setSeconds(0)
+// document.write("Later Date :"+laterDate);
+
+/*DATE METHODS #9 */
+// const oneDay = 24 * 60 * 60 * 1000;
+// const firstDate = new Date(2015, 5, 18);
+// const secondDate = new Date();
+// const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+// alert(diffDays +" Days Have been passed since 1st ramazan,2015");
+
+/*DATE METHODS #10 */
+// var t1 = new Date(2015, 0, 1, 0, 0, 0, 0);
+// var t2 = new Date(2015, 11, 5, 22, 50, 16, 0);
+// var dif = t2.getTime() - t1.getTime();
+// var Seconds = dif / 1000;
+// var SecondsBetweenDates = Math.abs(Seconds);
+// alert("On refrence date "+t1+" ,"+Seconds+' had been passed since beginning of 2015');
+
+/*DATE METHODS #11 */
+// let date_1=new Date();
+// document.write();
+// let date_2=new Date();
+// date_2.setHours(21);
+// document.write("Current Date :"+date_1+"<br />"+'1 Hour Ago it was '+date_2);
+
+/*DATE METHODS #12 */
+// let date_1=new Date();
+// document.write();
+// let date_2=new Date();
+// date_2.setFullYear(1921);
+// document.write("Current Date :"+date_1+"<br />"+'100 years back '+date_2);
+
+/*DATE METHODS #13 */
+// pending
+
+/*DATE METHODS #14 */
+// let date=new Date();
+// let name=("Fahad khan");
+// var month_name=new Array(12);
+// month_name[0]="January"
+// month_name[1]="February"
+// month_name[2]="March"
+// month_name[3]="April"
+// month_name[4]="May"
+// month_name[5]="June"
+// month_name[6]="July"
+// month_name[7]="August"
+// month_name[8]="September"
+// month_name[9]="October"
+// month_name[10]="November"
+// month_name[11]="December"
+// let month=(month_name[date.getMonth()]);
+// let units=(410);
+// let chargePerUnit=(16);
+// let NAP=(chargePerUnit*units);
+// let lateCharges=(350);
+// let GAPADD=(NAP+lateCharges);
+// document.write('<b>K-ELECTRIC BILL</b>'+"<br />"+"<br />")
+// document.write(`Customer Name :`+name+"<br />"+"Current Month : "+month+"<br />"+"Number of units : "+units+"<br />"+"Charge Per Units : "+chargePerUnit+"<br />"+"<br />"+"Net Amount Payable(With in due date) "+NAP+"<br />"+"Late Payment Surcharge : "+lateCharges+"<br />"+"Gross Amount Payable after Due Date : "+GAPADD);
+
+/*|.................COMPLETED CHAPTER 31 to 34......................|*/
+
+/*|.................START CHAPTER 35 to 38......................|*/
+
+/*Function #01 */
+// function date(){
+//     let currDate= new Date();
+//     document.write(currDate);
+// }
+// date();
+
+/*Function #02 */
+// function greeting(firstName,lastName) {
+//     let text=(`Hello ${firstName} ${lastName} Wellcome to our Web Browser`)
+//     return text;
+// }
+// let call=greeting('Fahad','khan');
+// document.write(call);
+
+/*Function #03 */
+// function addSum() {
+//     let num1=parseInt(prompt('enter number 1'));
+//     let num2=parseInt(prompt('enter number 1'));
+//     let sum=num1+num2;
+//     return sum;
+// }
+// let call=addSum();
+// document.write("Sum Of Two Numbers Are "+call);
+
+/*Function #04 */
+// function calculator() {
+    // let num1=parseInt(prompt('enter number 1'));
+    // let num2=parseInt(prompt('enter number 2'));
+//     let operator=(prompt('Select Operator'));
+//     if(operator==='+'){
+//         let calculation  = (num1 + num2);
+//         document.write(calculation);
+//     }
+//     else if(operator==='-'){
+//         let calculation = (num1 - num2);
+//         document.write(calculation);
+//     }
+//     else if(operator==='*'){
+//         let calculation = (num1 * num2);
+//         document.write(calculation);
+//     }
+//     else if(operator==='/'){
+//         let calculation = (num1 / num2);
+//         document.write(calculation);
+//     }
+//     else{
+//         alert('Please select only these operator + - * /');
+//     }
+//     return calculation;
+// }
+// let call= calculator();
+// document.write(call);
+
+/*Function #05 */
+// function square() {
+//     let num=parseInt(prompt('enter number'));
+//     let numSquare=(num*num);
+//     return numSquare;
+// }
+
+// let call=square();
+// alert(call);
+
+/*Function #06 */
+// function factorial(n){
+//     let answer = 1;
+//     if (n == 0 || n == 1){
+//       return answer;
+//     }else{
+//       for(var i = n; i >= 1; i--){
+//         answer = answer * i;
+//       }
+//       return answer;
+//     }  
+//   }
+//   let n =parseInt(prompt('number'));
+//   answer = factorial(n)
+//   document.write("The factorial of " + n + " is " + answer);
+
+/*Function #07 */
+// function counter() {
+//     let num1=parseInt(prompt('Enter Starting Number'));
+//     let num2=parseInt(prompt('Enter End Number'));
+//     for(num1;num1<=num2;num1++){
+//         let count = (num1+"<br />");
+//         document.write(count);
+//     }
+//     return count;
+// }
+// let call = counter();
+// alert(call);
+
+/*Function #08 */
+
+// function calculateHypotenuse() {
+//     let base=parseInt(prompt('enter base value'));
+//     let prep=parseInt(prompt('enter prep value'));
+//     let hyp=(base*base)+(prep*prep);
+//     let sqrt=Math.sqrt(hyp);
+//     return sqrt;
+// }
+// let call=calculateHypotenuse();
+// document.write(call);
+
+/*Function #09 */
+//  function areaOfRectangle(width,height) {
+//     let area=(width*height);
+//     return area;
+// }
+// let call=areaOfRectangle(10,12);
+// document.write('area of rectangle : '+call);
+
+/*Function #10 */
+// function checkPalindrome(str) {
+//     const len = string.length;
+//     for (let i = 0; i < len / 2; i++) {
+//         if (string[i] !== string[len - 1 - i]) {
+//             return 'It is not a palindrome';
+//         }
+//     }
+//     return 'It is a palindrome';
+// }
+// const string = prompt('Enter a string: ');
+// const value = checkPalindrome(string);
+
+// document.write(value);
+
+/*Function #11 */
+// function converter(str) {
+//     str = str.toLowerCase().split(' ');
+//     for (var i = 0; i < str.length; i++) {
+//       str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+//     }
+//     let sentence=str.join(' ');
+//     return sentence;
+// }
+    
+// let call=converter("the quick brown fox");
+// document.write(call);
+
+/*Function #12 */
+// function findLongWord(sentence)
+// {
+//   let array1 = sentence.match(/\w[a-z]{0,}/gi);
+//   let result = array1[0];
+
+//   for(let i = 1 ; i < array1.length ; i++)
+//   {
+//     if(result.length < array1[i].length)
+//     {
+//     result = array1[i];
+//     } 
+//   }
+//   return result;
+// }
+// let call=findLongWord('Web Development Tutorial')
+// document.write("The Longest word in the sentence is : "+call);
+
+/*Function #13 */
+// function charCount(str, letter) 
+// {
+//  let letterCount = 0;
+//  for (let position = 0; position < str.length; position++) 
+//  {
+//     if (str.charAt(position) == letter) 
+//       {
+//         letterCount += 1;
+//       }
+//   }
+//   return letterCount;
+// }
+// let call=charCount('JSResourceS.com', 'o');
+// document.write(call);
+
+/*Function #14 */
+// function calcCircumference(radiusofCircle) {
+//     let circumOfCircle=(2*(3.142)*(radiusofCircle));
+//     return circumOfCircle;
+// }
+// let call=calcCircumference(12);
+// document.write("Circumference Of A Circle : "+call +"<br />");
+// function calcArea(radius) {
+//     let areaOfCircle=((3.142)*(radius*radius));
+//     return areaOfCircle;
+// }
+// let call_2=calcArea(12);
+// document.write("Area Of A Circle : "+call_2);
+
+
+
+/*|.................COMPLETED CHAPTER 35 to 38......................|*/
+
+/*|.................START CHAPTER 38 to 42......................|*/
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #01 */
+// function exp(a,b)
+// {
+//         var ans = 1;
+//         for (var i =1; i <= b; i++)
+//         {
+//                 ans = a * ans;        
+//         }
+//         return ans;
+// }
+// let call=exp(2,3);
+// document.write(call);
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #02 */
+// function checkLeapYear(year) {
+
+//     if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+//         document.write(year + ' is a leap year');
+//     } else {
+//         document.write(year + ' is not a leap year');
+//     }
+// }
+
+// let year = prompt('Enter a year:');
+
+// checkLeapYear(year);
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #03 */
+// function areaCalculator(a,b,c) {
+//     function sVariable() {
+//         let sFormula=((a+b+c)/2);
+//         return sFormula;
+//     }
+//     let s=sVariable();
+//     let area=s*(s-a)*(s-b)*(s-c);
+//     return area;
+// }
+// let call=areaCalculator(8,5,9);
+// console.log(call);
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #04 */
+// function mainFunction(marks_1,marks_2,marks_3) {
+//     function average() {
+//         let avg = (marks_1+marks_2+marks_3)/ 3;
+//         return avg;
+//     }
+//     function percentage() {
+//         let totalMarks=300;
+//         let per=((marks_1+marks_2+marks_3)/totalMarks)*100;
+//         return per;
+//     }
+//     document.write("Your Average marks in 3 subjects is : "+average()+"<br />");
+//     document.write("your percentage is : "+percentage());
+// }
+// mainFunction(50,60,80);
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #05 */
+// pending....
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #06 */
+// function removeVowels() {
+//     let arr=('my name is fahad khan,and i m website developer in software technology movement');
+//     let string = arr.replace( /[aeiou]/g, '' );
+//     return string;
+// }
+// let call=removeVowels();
+// document.write(call);
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #07 */
+// function findOccurrences() {
+//     var str = "Pleases read this application and give me gratuity";
+//     var count = 0;
+//     let haveSeenVowel = false;
+  
+//     for (const letter of str.toLowerCase()) {
+//       switch (letter) {
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//           {
+//             if (haveSeenVowel) {
+//               count++;
+//               haveSeenVowel = false;
+//             } else {
+//               haveSeenVowel = true;
+//             }
+//             break;
+//           }
+//         default:
+//           haveSeenVowel = false
+//       }
+//     }
+  
+//     return count
+// }
+
+// document.write('total occurences in succession are : '+findOccurrences());
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #08 */
+// function distanceCalculator() {
+//     let distance=parseInt(prompt('Enter distance between two cities'));
+//     function distanceIM() {
+//         let distanceInMeters=(distance*1000);
+//         return distanceInMeters;
+//     }
+//     function distanceIF() {
+//         let distanceInFeets=(distance*3281);
+//         return distanceInFeets;
+//     }
+//     function distanceII() {
+//         let distanceInInches=(distance*39370);
+//         return distanceInInches;
+//     }
+//     function distanceICM() {
+//         let distanceInCentiMeters=(distance*100000);
+//         return distanceInCentiMeters;
+//     }
+//     document.write('Total distance in kilometers is '+distance +"Km"+"<br />");
+//     document.write('Total distance in Meters is '+distanceIM()+"M" +"<br />");
+//     document.write('Total distance in Feets is '+distanceIF()+"F" +"<br />");
+//     document.write('Total distance in Inches is '+distanceII()+"In" +"<br />");
+//     document.write('Total distance in Centimeters is '+distanceICM()+"Cm" +"<br />");
+// }
+// distanceCalculator();
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #09 */
+// function overtimePaidCalculation(timeWorked) {
+//     let over_time=0, overtime_pay=0;
+//     document.write('Employe Worked For '+timeWorked+' hour.'+"<br />");
+//     if(timeWorked>=40){
+
+//         over_time = timeWorked - 40;
+//         overtime_pay=overtime_pay+(12 * over_time);
+//     }
+//     document.write("Total Overtime Pay Of Employee Is "+ overtime_pay+"Rs");
+// }
+// overtimePaidCalculation(48);
+
+/*FUNCTIONS| SWITCH | WHILE.. DO-WHILE  #10 */
+// function currencyCalculation() {
+//     let amount=parseInt(prompt('enter your amount for withdraw'));
+    
+//     document.write('\n\nyour withdrawal amount : '+amount+"<br />");
+//     document.write('\nRequired notes of 100 is :'+Math.floor(amount/100)+"<br />");
+//     document.write('\nRequired notes of 50 is :'+Math.floor((amount%100)/50)+"<br />");
+//     document.write('\nRequired notes of 10 is :'+Math.floor(((amount%100)%50)/10)+"<br />");
+// }
+// currencyCalculation();
+
+//|...............Completed chapter 1 to 42................|
